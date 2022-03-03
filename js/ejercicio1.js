@@ -5,35 +5,28 @@ boton1.addEventListener('click', () => {
   var totalpag = new Number()
   var descuento = new Number()
 
-  /* document.write("---- TIPOS DE CATEGORÌA ----", '<BR/>');
-    document.write("------------------------------------------------------", '<BR/>');
-    document.write("Tipo A --> 10% de Descuento", '<BR/>');
-    document.write("Tipo B --> 15% de Descuento", '<BR/>');
-    document.write("Tipo C --> 20% de Descuento", '<BR/>');
-    document.write("------------------------------------------------------", '<BR/>');*/
-  tipoCategoria = prompt('Ingrese su categoría: ')
+  tipoCategoria = prompt('Ingrese su categoría en letra mayúscula: ')
 
   switch (tipoCategoria) {
-    case ('a,A'):
+    case 'A':
       valorCompra = Number(prompt('Ingrese el valor se su compra'))
       descuento = 0.1 * valorCompra
       totalpag = valorCompra - descuento
       document.getElementById('subTotal').innerHTML = valorCompra
       document.getElementById('descuento').innerHTML = descuento
       document.getElementById('total').innerHTML = totalpag
+      document.getElementById('categoria').innerHTML = tipoCategoria
       break
-    case ('b', 'B'):
-      document.write('Ingrese el Valor de su compra', '<BR/>')
-      valorCompra = Number(prompt())
+    case 'B':
+      valorCompra = Number(prompt('Ingrese el valor se su compra'))
       descuento = 0.15 * valorCompra
       totalpag = valorCompra - descuento
       document.getElementById('subTotal').innerHTML = valorCompra
       document.getElementById('descuento').innerHTML = descuento
       document.getElementById('total').innerHTML = totalpag
       break
-    case ('c', 'C'):
-      document.write('Ingrese el Valor de su compra', '<BR/>')
-      valorCompra = Number(prompt())
+    case 'C':
+      valorCompra = Number(prompt('Ingrese el valor se su compra'))
       descuento = 0.2 * valorCompra
       totalpag = valorCompra - descuento
       document.getElementById('subTotal').innerHTML = valorCompra
