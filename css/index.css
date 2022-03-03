@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Fredoka:wght@300;400&family=Noto+Sans:ital@1&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primario: rgb(43, 255, 0);
+  --color-secundario: rgba(255, 255, 255, 0.979);
+  --violeta: #f4f;
+  --naranja: #ff8800;
+  --negro: rgb(36, 35, 35);
+}
+body{
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 15px;
+
+}
+/*menu*/
+.menu {
+  width: 100%;
+  position: sticky;
+  text-align: center;
+  padding: 4px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.menu a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: var(--color-secundario);
+  padding: 15px;
+  transition: 0.5s ease all;
+}
+.menu a:hover {
+  letter-spacing: 4px;
+  transform: translateY(18px);
+  border-bottom: 1px solid var(--color-primario);
+  background-color: var(--naranja);
+}
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 100px 0;
+}
+/*fondo*/
+.inicio::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%),
+    url('/fondounidad2.jpg');
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+  z-index: -1;
+}
+.inicio-contenedor {
+  max-width: 800px;
+  padding: 100px 0;
+  display: grid;
+  grid-auto-rows: max-content;
+  align-items: center;
+  gap: 1em;
+  padding-bottom: 100px;
+  text-align: center;
+  color: var(--color-secundario);
+  margin-bottom: 15rem;
+}
+.inicio-titulo {
+  font-size: 3rem;
+}
+.inicio-parrafo {
+  margin-bottom: 20px;
+}
+.subtitulo {
+  color: var(--naranja);
+  font-size: 2rem;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.btn{
+  display: inline-block;
+  padding: 15px;
+  margin: 15px;
+  background-color: var(--color-primario);
+  color: var(--negro);
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+}
+.btn:hover{
+  background-color: var(--naranja);
+  color: var(--color-secundario);
+}
