@@ -3,7 +3,7 @@ boton6.addEventListener('click', () => {
     var num, total, val;
 
 
-    num = Number(prompt("Ingrese el tipo de valor a pagar"));
+    num = Number(prompt("Ingrese su opciòn a pagar"));
     val = Number(prompt("Escribir tu valor a pagar"));
     switch (num) {
         case 1:
